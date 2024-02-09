@@ -1,13 +1,21 @@
+// Date function
 const currentYear = new Date().getFullYear();
 
 document.getElementById("current-year").textContent = currentYear;
 
+// drop down menu function
 function selectItem(itemText) {
   document.getElementById("dropbtn").textContent = itemText;
 }
 
+// toggle menu fuction
+function toggleMenu() {
+  const menuList = document.querySelector(".menu-list");
+  menuList.classList.toggle("show");
+}
+
+// progress bar function
 function updateProgressBar(step) {
-  // Update the progress bar based on the current step
   for (let i = 1; i <= 6; i++) {
     const progressStep = document.getElementById(`progress-step-${i}`);
     if (i <= step) {

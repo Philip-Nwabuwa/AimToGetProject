@@ -27,20 +27,30 @@
           <a href="#" class="text-white">FAQ</a>
           <a href="#" class="text-white">Team</a>
         </div>
-        <div class="flex lg:hidden text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="32"
-            height="32"
-            viewBox="0 0 48 48"
-            class="fill-white"
-          >
-            <path
-              d="M 8 6 C 6.3550302 6 5 7.3550302 5 9 L 5 11 C 5 12.64497 6.3550302 14 8 14 L 40 14 C 41.64497 14 43 12.64497 43 11 L 43 9 C 43 7.3550302 41.64497 6 40 6 L 8 6 z M 8 8 L 40 8 C 40.56503 8 41 8.4349698 41 9 L 41 11 C 41 11.56503 40.56503 12 40 12 L 8 12 C 7.4349698 12 7 11.56503 7 11 L 7 9 C 7 8.4349698 7.4349698 8 8 8 z M 8 20 C 6.3550302 20 5 21.35503 5 23 L 5 25 C 5 26.64497 6.3550302 28 8 28 L 40 28 C 41.64497 28 43 26.64497 43 25 L 43 23 C 43 21.35503 41.64497 20 40 20 L 8 20 z M 8 22 L 40 22 C 40.56503 22 41 22.43497 41 23 L 41 25 C 41 25.56503 40.56503 26 40 26 L 8 26 C 7.4349698 26 7 25.56503 7 25 L 7 23 C 7 22.43497 7.4349698 22 8 22 z M 8 34 C 6.3550302 34 5 35.35503 5 37 L 5 39 C 5 40.64497 6.3550302 42 8 42 L 40 42 C 41.64497 42 43 40.64497 43 39 L 43 37 C 43 35.35503 41.64497 34 40 34 L 8 34 z M 8 36 L 40 36 C 40.56503 36 41 36.43497 41 37 L 41 39 C 41 39.56503 40.56503 40 40 40 L 8 40 C 7.4349698 40 7 39.56503 7 39 L 7 37 C 7 36.43497 7.4349698 36 8 36 z"
-            ></path>
-          </svg>
+        <div class="menubar">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="32"
+              height="32"
+              viewBox="0 0 48 48"
+              class="fill-white"
+            >
+              <path
+                d="M 8 6 C 6.3550302 6 5 7.3550302 5 9 L 5 11 C 5 12.64497 6.3550302 14 8 14 L 40 14 C 41.64497 14 43 12.64497 43 11 L 43 9 C 43 7.3550302 41.64497 6 40 6 L 8 6 z M 8 8 L 40 8 C 40.56503 8 41 8.4349698 41 9 L 41 11 C 41 11.56503 40.56503 12 40 12 L 8 12 C 7.4349698 12 7 11.56503 7 11 L 7 9 C 7 8.4349698 7.4349698 8 8 8 z M 8 20 C 6.3550302 20 5 21.35503 5 23 L 5 25 C 5 26.64497 6.3550302 28 8 28 L 40 28 C 41.64497 28 43 26.64497 43 25 L 43 23 C 43 21.35503 41.64497 20 40 20 L 8 20 z M 8 22 L 40 22 C 40.56503 22 41 22.43497 41 23 L 41 25 C 41 25.56503 40.56503 26 40 26 L 8 26 C 7.4349698 26 7 25.56503 7 25 L 7 23 C 7 22.43497 7.4349698 22 8 22 z M 8 34 C 6.3550302 34 5 35.35503 5 37 L 5 39 C 5 40.64497 6.3550302 42 8 42 L 40 42 C 41.64497 42 43 40.64497 43 39 L 43 37 C 43 35.35503 41.64497 34 40 34 L 8 34 z M 8 36 L 40 36 C 40.56503 36 41 36.43497 41 37 L 41 39 C 41 39.56503 40.56503 40 40 40 L 8 40 C 7.4349698 40 7 39.56503 7 39 L 7 37 C 7 36.43497 7.4349698 36 8 36 z"
+              ></path>
+            </svg>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Services</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+          </ul>
         </div>
       </nav>
 
@@ -59,16 +69,20 @@
         <div class="flex flex-row gap-4 items-center pb-32 lg:pb-0">
           <a href="form.html">
             <button
-              class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
+              class="bg-[#AB2923] text-white flex items-center lg:gap-4 gap-3 py-3 lg:px-5 px-2.5 rounded-full"
             >
               Reserve your seat
               <span>
-                <img src="./assets/icons/Arrow.svg" alt="" />
+                <img
+                  src="./assets/icons/Arrow.svg"
+                  alt="Arrow"
+                  class="lg:w-full lg:h-full w-[20px] h-[20px]"
+                />
               </span>
             </button>
           </a>
           <button
-            class="text-white flex items-center py-4 lg:px-9 px-5 rounded-full border border-solid border-white"
+            class="text-white flex items-center lg:py-4 py-2.5 lg:px-9 px-4 rounded-full border border-solid border-white"
           >
             Talk to us
           </button>
@@ -78,7 +92,6 @@
           <img
             src="./assets/images/Rectangle2.svg"
             class="w-[300px] lg:w-full"
-            alt=""
           />
         </div>
       </div>
@@ -125,7 +138,7 @@
             <img
               src="./assets/images/__after.svg"
               class="w-full h-full absolute inset-0 object-cover"
-              alt=""
+              alt="Fast Internet Image"
             />
             <div class="absolute inset-0 gradient-overlay"></div>
 
@@ -149,7 +162,7 @@
             <img
               src="./assets/images/image 4.svg"
               class="w-full h-full rounded-3xl"
-              alt=""
+              alt="Friendly Environment Image"
             />
             <div
               class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
@@ -184,7 +197,7 @@
             <img
               src="./assets/images/image 3.svg"
               class="rounded-3xl w-full h-full"
-              alt=""
+              alt="Confortable workspace"
             />
             <div
               class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
@@ -207,11 +220,7 @@
     </section>
     <section class="w-full h-full bg-black relative">
       <div class="absolute img-flip lg:-top-28 -top-4 left-0 z-2">
-        <img
-          src="./assets/images/Rectangle2.svg"
-          class="w-[300px] lg:w-full"
-          alt=""
-        />
+        <img src="./assets/images/Rectangle2.svg" class="w-[300px] lg:w-full" />
       </div>
       <div
         class="flex flex-col lg:flex-row items-center gap-6 lg:px-10 px-6 py-20"
@@ -236,16 +245,20 @@
           <div class="flex flex-row gap-4 items-center">
             <a href="form.html">
               <button
-                class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
+                class="bg-[#AB2923] text-white flex items-center lg:gap-4 gap-3 py-3 lg:px-5 px-2.5 rounded-full"
               >
                 Reserve your seat
                 <span>
-                  <img src="./assets/icons/Arrow.svg" alt="" />
+                  <img
+                    src="./assets/icons/Arrow.svg"
+                    alt="Arrow"
+                    class="lg:w-full lg:h-full w-[20px] h-[20px]"
+                  />
                 </span>
               </button>
             </a>
             <button
-              class="text-white flex items-center py-4 lg:px-9 px-5 rounded-full border border-solid border-white"
+              class="text-white flex items-center lg:py-4 py-2.5 lg:px-9 px-5 rounded-full border border-solid border-white"
             >
               Talk to us
             </button>
@@ -254,7 +267,7 @@
         <div class="pt-10 lg:pt-0">
           <img
             src="./assets/images/CPxZU1OVNhqt2OUgxBJrd9PRpWM.png.png"
-            alt=""
+            alt="User image"
           />
         </div>
       </div>
@@ -324,7 +337,7 @@
             <div>
               <img
                 src="./assets/images/Figure → vabkV29Mwsg6mVIhptQCGUJOfo.jpg.png"
-                alt=""
+                alt="Event image"
                 class="lg:rounded-r-3xl rounded-3xl"
               />
               <h3
@@ -343,7 +356,7 @@
             <div>
               <img
                 src="./assets/images/Figure → ZjMtQWLWtmNjqi430DPCu7Cm6Xw.jpg.png"
-                alt=""
+                alt="space image"
                 class="rounded-3xl"
               />
               <div class="lg:flex lg:items-center lg:justify-between">
@@ -362,7 +375,7 @@
             <div>
               <img
                 src="./assets/images/Figure → erEXXlnzGFr4a6FIbPFhLBWHIBQ.jpg.png"
-                alt=""
+                alt="Private Office image"
                 class="lg:rounded-l-3xl rounded-3xl"
               />
               <div class="lg:flex lg:justify-start pt-2">
@@ -378,11 +391,7 @@
         </div>
       </div>
       <div class="absolute img-flip-x lg:-bottom-28 -bottom-4 left-0 z-2">
-        <img
-          src="./assets/images/Rectangle2.svg"
-          class="w-[300px] lg:w-full"
-          alt=""
-        />
+        <img src="./assets/images/Rectangle2.svg" class="w-[300px] lg:w-full" />
       </div>
     </section>
     <section class="w-full h-full relative px-6">
@@ -410,23 +419,23 @@
 
             <ul class="flex flex-col pt-4 gap-4">
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>24/7 Power Supply</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Fast Speed Internet</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Access 9am - 5pm</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Custom integrations</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Free refreshment (T & C Applies)</p>
               </li>
             </ul>
@@ -460,23 +469,23 @@
 
             <ul class="flex flex-col pt-4 gap-4">
               <li class="flex gap-4">
-                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="check" />
                 <p>24/7 Power Supply</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="check" />
                 <p>Fast Speed Internet</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="check" />
                 <p>Access 9am - 5pm</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="check" />
                 <p>Custom integrations</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="check" />
                 <p>Free refreshment (T & C Applies)</p>
               </li>
             </ul>
@@ -500,23 +509,23 @@
 
             <ul class="flex flex-col pt-4 gap-4">
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>24/7 Power Supply</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Fast Speed Internet</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Access 9am - 5pm</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Custom integrations</p>
               </li>
               <li class="flex gap-4">
-                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <img src="./assets/icons/Checkmark.svg" alt="check" />
                 <p>Free refreshment (T & C Applies)</p>
               </li>
             </ul>
@@ -542,11 +551,7 @@
       class="lg:h-[412px] h-[300px] relative"
     >
       <div class="absolute img-flip-y lg:-top-28 -top-4 right-0 z-10">
-        <img
-          src="./assets/images/Rectangle2.svg"
-          class="w-[300px] lg:w-full"
-          alt=""
-        />
+        <img src="./assets/images/Rectangle2.svg" class="w-[300px] lg:w-full" />
       </div>
       <div
         style="
@@ -605,9 +610,13 @@
         <div class="lg:col-span-1">
           <h3 class="text-[20px] text-[#b2b2b2] pt-4 pb-2">Follow Us</h3>
           <ul class="flex items-center gap-2 pb-3">
-            <li><img src="./assets/icons/Instagram.svg" alt="" /></li>
-            <li><img src="./assets/icons/Facebook.svg" alt="" /></li>
-            <li><img src="./assets/icons/Tiktok.svg" alt="" /></li>
+            <li>
+              <img src="./assets/icons/Instagram.svg" alt="Instagram icon" />
+            </li>
+            <li>
+              <img src="./assets/icons/Facebook.svg" alt="Facebook icon" />
+            </li>
+            <li><img src="./assets/icons/Tiktok.svg" alt="Tiktok icon" /></li>
           </ul>
           <div class="flex flex-col gap-2 pb-2 lg:pb-0">
             <p class="font-bold text-[18px]">Talk to us</p>
