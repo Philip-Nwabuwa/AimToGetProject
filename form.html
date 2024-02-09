@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Multi-Step Form</title>
+  </head>
+  <body>
+    <div class="w-full h-[calc(100vh-80px)]">
+      <div class="flex gap-4 lg:px-10 px-6 py-5 h-full">
+        <div id="progress-bar-container h-full">
+          <ul class="progress-bar">
+            <li class="active" id="progress-step-1"></li>
+            <li id="progress-step-2"></li>
+            <li id="progress-step-3"></li>
+            <li id="progress-step-4"></li>
+            <li id="progress-step-5"></li>
+            <li id="progress-step-6"></li>
+            <li id="progress-step-7"></li>
+          </ul>
+        </div>
+        <form id="multiStepForm" class="flex flex-col h-full w-full">
+          <div class="form-step h-full" id="step-1">
+            <div class="flex items-start justify-start gap-3">
+              <a href="home.html">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </a>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>Pick the day you want to make use the hub.</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(2)" />
+            </div>
+          </div>
+
+          <div class="form-step h-full" id="step-2" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <button value="Back" onclick="showStep(1)">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </button>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>Select a package</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(3)" />
+            </div>
+          </div>
+
+          <div class="form-step h-full" id="step-3" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <button value="Back" onclick="showStep(2)">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </button>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>Your email address</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(4)" />
+            </div>
+          </div>
+          <div class="form-step h-full" id="step-4" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <button value="Back" onclick="showStep(3)">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </button>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>Your full name</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(5)" />
+            </div>
+          </div>
+
+          <div class="form-step h-full" id="step-5" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <button value="Back" onclick="showStep(4)">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </button>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>Your phone number</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(6)" />
+            </div>
+          </div>
+
+          <div class="form-step h-full" id="step-6" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <button value="Back" onclick="showStep(5)">
+                <img
+                  src="./assets/icons/ArrowLeft.svg"
+                  class="p-3 border border-black border-solid rounded-full"
+                  alt=""
+                />
+              </button>
+
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex justify-center items-center">
+              <h2>How would you like to pay?</h2>
+            </div>
+            <div class="flex items-end justify-end">
+              <input type="button" value="Next" onclick="showStep(7)" />
+            </div>
+          </div>
+          <div class="form-step h-full" id="step-7" style="display: none">
+            <div class="flex items-start justify-start gap-3">
+              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+            </div>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2>Spot Reserved</h2>
+              <p class="w-[530px] text-[18px] text-center">
+                Your spot has been reserved. Kindly visit the hub and see the
+                receptionist to make cash payments.
+              </p>
+            </div>
+            <div class="flex items-end justify-end">
+              <a href="home.html">
+                <button>Go to home</button>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

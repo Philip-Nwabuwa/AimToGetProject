@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section
+      style="
+        background-image: url(./assets/images/HomeImage.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+      class="lg:h-screen w-full relative"
+    >
+      <nav
+        class="h-[96px] lg:px-10 px-6 flex flex-row justify-between items-center"
+      >
+        <img src="./assets/images/aimtogetLight.svg" alt="Logo" />
+        <div class="hidden lg:flex flex-row items-center gap-10">
+          <a href="#" class="text-white">Schedule</a>
+          <a href="#" class="text-white">What to expect</a>
+          <a href="#" class="text-white">FAQ</a>
+          <a href="#" class="text-white">Team</a>
+        </div>
+        <div class="flex lg:hidden text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="32"
+            height="32"
+            viewBox="0 0 48 48"
+            class="fill-white"
+          >
+            <path
+              d="M 8 6 C 6.3550302 6 5 7.3550302 5 9 L 5 11 C 5 12.64497 6.3550302 14 8 14 L 40 14 C 41.64497 14 43 12.64497 43 11 L 43 9 C 43 7.3550302 41.64497 6 40 6 L 8 6 z M 8 8 L 40 8 C 40.56503 8 41 8.4349698 41 9 L 41 11 C 41 11.56503 40.56503 12 40 12 L 8 12 C 7.4349698 12 7 11.56503 7 11 L 7 9 C 7 8.4349698 7.4349698 8 8 8 z M 8 20 C 6.3550302 20 5 21.35503 5 23 L 5 25 C 5 26.64497 6.3550302 28 8 28 L 40 28 C 41.64497 28 43 26.64497 43 25 L 43 23 C 43 21.35503 41.64497 20 40 20 L 8 20 z M 8 22 L 40 22 C 40.56503 22 41 22.43497 41 23 L 41 25 C 41 25.56503 40.56503 26 40 26 L 8 26 C 7.4349698 26 7 25.56503 7 25 L 7 23 C 7 22.43497 7.4349698 22 8 22 z M 8 34 C 6.3550302 34 5 35.35503 5 37 L 5 39 C 5 40.64497 6.3550302 42 8 42 L 40 42 C 41.64497 42 43 40.64497 43 39 L 43 37 C 43 35.35503 41.64497 34 40 34 L 8 34 z M 8 36 L 40 36 C 40.56503 36 41 36.43497 41 37 L 41 39 C 41 39.56503 40.56503 40 40 40 L 8 40 C 7.4349698 40 7 39.56503 7 39 L 7 37 C 7 36.43497 7.4349698 36 8 36 z"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+
+      <div class="h-full flex flex-col gap-6 lg:mt-20 mt-32 lg:px-10 px-6">
+        <h1
+          class="font-bold lg:text-[80px] text-[32px] flex items-center lg:w-[757px] lg:h-[250px] lg:leading-[74px] gradient-text"
+        >
+          Accessible & Comfortable <br class="hidden lg:flex" />Co-working space
+        </h1>
+
+        <p class="text-white lg:text-[22px] text-[18px] font-normal">
+          Get access to mordern workspace that also opens you up <br />
+          to meet other creatives.
+        </p>
+
+        <div class="flex flex-row gap-4 items-center pb-32 lg:pb-0">
+          <a href="form.html">
+            <button
+              class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
+            >
+              Reserve your seat
+              <span>
+                <img src="./assets/icons/Arrow.svg" alt="" />
+              </span>
+            </button>
+          </a>
+          <button
+            class="text-white flex items-center py-4 lg:px-9 px-5 rounded-full border border-solid border-white"
+          >
+            Talk to us
+          </button>
+        </div>
+
+        <div class="absolute lg:-bottom-28 -bottom-4 right-0 z-2">
+          <img
+            src="./assets/images/Rectangle2.svg"
+            class="w-[300px] lg:w-full"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full flex flex-col items-center justify-center px-10 my-20"
+    >
+      <div class="z-10">
+        <h2
+          class="gradient-text-2 font-bold lg:text-[54px] lg:leading-[60px] z-10 text-center"
+        >
+          More than just a
+        </h2>
+        <h2
+          class="text-[#AB2923] font-bold lg:text-[54px] lg:leading-[60px] z-10 text-center"
+        >
+          Workspace...
+        </h2>
+
+        <!-- <div
+          class="grid lg:grid-cols-1 lg:grid-rows-2 lg:grid-cols-3 gap-4 mt-10"
+        >
+          <div
+            class="lg:col-span-1 lg:row-span-2 relative border border-solid border-gray-200 rounded-5xl"
+          >
+            <img
+              src="./assets/images/__after.svg"
+              class="w-full h-full absolute inset-0 object-cover"
+              alt=""
+            />
+            <div class="absolute inset-0 gradient-overlay"></div>
+
+            <div
+              class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
+            >
+              <h3
+                class="gradient-text-3 text-[34px] leading-[40px] font-bold mb-4"
+              >
+                Fast Internet
+              </h3>
+              <p>
+                We offer fast and relaible internet <br />
+                connection.
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative lg:col-span-1 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+          >
+            <img
+              src="./assets/images/image 4.svg"
+              class="w-full h-full rounded-3xl"
+              alt=""
+            />
+            <div
+              class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
+            >
+              <h3
+                class="gradient-text-3 text-[34px] leading-[40px] font-bold mb-4"
+              >
+                Friendly <br />
+                Environment
+              </h3>
+              <p>We offer a friendly & fun <br />environment.</p>
+            </div>
+          </div>
+          <div
+            class="relative lg:col-span-1 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+          >
+            <div
+              class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
+            >
+              <h3
+                class="gradient-text-3 text-[34px] leading-[40px] font-bold mb-4"
+              >
+                Uninterrupted <br />
+                Electricity
+              </h3>
+              <p>We provide stable power supply</p>
+            </div>
+          </div>
+          <div
+            class="relative lg:col-span-2 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+          >
+            <img
+              src="./assets/images/image 3.svg"
+              class="rounded-3xl w-full h-full"
+              alt=""
+            />
+            <div
+              class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
+            >
+              <h3
+                class="gradient-text-3 text-[34px] leading-[40px] font-bold mb-4"
+              >
+                Confortable <br />
+                workspace
+              </h3>
+
+              <p class="leading-[20px]">
+                Modern and innovative <br />
+                workspace.
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="w-full h-full bg-black relative">
+      <div class="absolute img-flip lg:-top-28 -top-4 left-0 z-2">
+        <img
+          src="./assets/images/Rectangle2.svg"
+          class="w-[300px] lg:w-full"
+          alt=""
+        />
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-center gap-6 lg:px-10 px-6 py-20"
+      >
+        <div class="flex flex-col gap-4">
+          <h2
+            class="lg:w-[776px] font-bold text-[24px] lg:text-[54px] flex items-center lg:leading-[60px] gradient-text"
+          >
+            We help you build meaningful connections, share experiences, and
+            support each other.
+          </h2>
+
+          <p
+            class="text-white lg:text-[16px] text-[12px] font-normal max-w-[671px]"
+          >
+            Aimtoget Hub is a community-driven platform that fosters
+            collaboration and productivity through shared physical workspaces,
+            special events, social areas, and a digital member network,
+            emphasizing the importance of loving one's work environment.
+          </p>
+
+          <div class="flex flex-row gap-4 items-center">
+            <button
+              class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
+            >
+              Reserve your seat
+              <span>
+                <img src="./assets/icons/Arrow.svg" alt="" />
+              </span>
+            </button>
+            <button
+              class="text-white flex items-center py-4 lg:px-9 px-5 rounded-full border border-solid border-white"
+            >
+              Talk to us
+            </button>
+          </div>
+        </div>
+        <div class="pt-10 lg:pt-0">
+          <img
+            src="./assets/images/CPxZU1OVNhqt2OUgxBJrd9PRpWM.png.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:px-10 px-6 py-20 text-white"
+      >
+        <div
+          class="bg-[#1b1b1b] flex justify-between h-[300px] w-full rounded-[20px] pt-5 pl-5"
+        >
+          <div>
+            <h3
+              class="gradient-text-4 text-[34px] leading-[40px] font-bold mb-4"
+            >
+              Shared <br />Workspaces
+            </h3>
+            <p
+              class="text-white text-[14px] font-normal w-[239px] leading-[24px]"
+            >
+              Our shared workspaces are designed to foster collaboration,
+              creativity, and productivity among community members.
+            </p>
+          </div>
+          <div class="w-full h-full flex justify-end items-end">
+            <div
+              class="bg-[#131313] w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="bg-[#1b1b1b] flex justify-between h-[300px] w-full rounded-[20px] pt-5 pl-5"
+        >
+          <div>
+            <h3
+              class="gradient-text-4 text-[34px] leading-[40px] font-bold mb-4"
+            >
+              Special <br />
+              Events
+            </h3>
+            <p
+              class="text-white text-[14px] font-normal w-[239px] leading-[24px]"
+            >
+              Our shared workspaces are designed to foster collaboration,
+              creativity, and productivity among community members.
+            </p>
+          </div>
+          <div class="w-full h-full flex justify-end items-end">
+            <div
+              class="bg-[#131313] w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
+            ></div>
+          </div>
+        </div>
+      </div>
+      >
+    </section>
+    <section class="bg-black w-full h-full relative">
+      <div class="pt-20 pb-32">
+        <h2
+          class="gradient-text-4 lg:text-[54px] text-[32px] text-center leading-[60px] font-bold mb-4"
+        >
+          Take a look
+        </h2>
+        <div class="pt-6 px-6 lg:px-0">
+          <div
+            class="flex flex-col lg:flex-row gap-8 items-center justify-center"
+          >
+            <div>
+              <img
+                src="./assets/images/Figure → vabkV29Mwsg6mVIhptQCGUJOfo.jpg.png"
+                alt=""
+                class="lg:rounded-r-3xl rounded-3xl"
+              />
+              <h3
+                class="block lg:hidden gradient-text-4 text-center text-[32px] leading-[30px] font-bold mt-4"
+              >
+                Event space
+              </h3>
+              <div class="flex justify-end pt-4">
+                <img
+                  class="p-2 hidden lg:flex bg-[#120f1f] rounded-full"
+                  src="./assets/icons/ArrowRight.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                src="./assets/images/Figure → ZjMtQWLWtmNjqi430DPCu7Cm6Xw.jpg.png"
+                alt=""
+                class="rounded-3xl"
+              />
+              <div class="lg:flex lg:items-center lg:justify-between">
+                <h3
+                  class="block gradient-text-4 text-center lg:text-start text-[32px] leading-[30px] font-bold mt-4"
+                >
+                  Event <br class="hidden lg:flex" />space
+                </h3>
+                <img
+                  class="p-2 bg-[#120f1f] hidden lg:flex rounded-full"
+                  src="./assets/icons/ArrowRight.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                src="./assets/images/Figure → erEXXlnzGFr4a6FIbPFhLBWHIBQ.jpg.png"
+                alt=""
+                class="lg:rounded-l-3xl rounded-3xl"
+              />
+              <div class="lg:flex lg:justify-start pt-2">
+                <h3
+                  class="gradient-text-4 text-center lg:text-start text-[32px] leading-[30px] font-bold mt-4"
+                >
+                  Private <br class="hidden lg:flex" />
+                  Office
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute img-flip-x lg:-bottom-28 -bottom-4 left-0 z-2">
+        <img
+          src="./assets/images/Rectangle2.svg"
+          class="w-[300px] lg:w-full"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="w-full h-full relative">
+      <div class="px-10 py-20">
+        <h2
+          class="gradient-text-2 font-bold text-[54px] leading-[60px] z-10 text-center pb-2"
+        >
+          Our Pricing
+        </h2>
+        <p class="text-[14px] text-center pt-3 font-normal leading-[24px]">
+          Discover flexible and affordable membership plans tailored to
+          <br class="hidden lg:flex" />meet your unique needs.
+        </p>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row gap-8 items-center justify-center pb-20"
+      >
+        <div class="w-[380px] h-[486px] bg-[#e8e8e8] flex rounded-3xl">
+          <div class="p-8 w-full">
+            <p class="font-bold text-[32px] text-center">Daily</p>
+            <div class="flex items-end justify-center">
+              <p class="text-[40px]">NGN 1,500</p>
+              <p class="text-[#ab2923] pb-2">/day</p>
+            </div>
+
+            <ul class="flex flex-col pt-4 gap-4">
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>24/7 Power Supply</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Fast Speed Internet</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Access 9am - 5pm</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Custom integrations</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Free refreshment (T & C Applies)</p>
+              </li>
+            </ul>
+
+            <button
+              class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-[380px] h-[486px] lg:mb-40 bg-[#ab2923] rounded-3xl text-white"
+        >
+          <div class="p-8 w-full">
+            <div class="w-full flex justify-end pb-2">
+              <div
+                class="w-fit flex items-center gap-2 border border-solid border-black px-3 py-2 rounded-full"
+              >
+                <img src="./assets/icons/Star.svg" alt="" />
+                <p class="text-[14px]">Recommended</p>
+              </div>
+            </div>
+            <p class="font-bold text-[32px] text-center">Weekly</p>
+            <div class="flex items-end justify-center">
+              <p class="text-[40px]">NGN 7,000</p>
+              <p class="pb-2">/week</p>
+            </div>
+
+            <ul class="flex flex-col pt-4 gap-4">
+              <li class="flex gap-4">
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <p>24/7 Power Supply</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <p>Fast Speed Internet</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <p>Access 9am - 5pm</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <p>Custom integrations</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/WhiteCheckmark.svg" alt="" />
+                <p>Free refreshment (T & C Applies)</p>
+              </li>
+            </ul>
+
+            <button
+              class="w-full h-[60px] bg-white text-black mt-4 rounded-full"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div class="w-[380px] h-[486px] bg-[#e8e8e8] flex rounded-3xl">
+          <div class="p-8 w-full">
+            <p class="font-bold text-[32px] text-center">Monthly</p>
+            <div class="flex items-end justify-center">
+              <p class="text-[40px]">NGN 20,000</p>
+              <p class="text-[#ab2923] pb-2">/month</p>
+            </div>
+
+            <ul class="flex flex-col pt-4 gap-4">
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>24/7 Power Supply</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Fast Speed Internet</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Access 9am - 5pm</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Custom integrations</p>
+              </li>
+              <li class="flex gap-4">
+                <img src="./assets/icons/Checkmark.svg" alt="" />
+                <p>Free refreshment (T & C Applies)</p>
+              </li>
+            </ul>
+
+            <button
+              class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      style="
+        background-image: url(./assets/images/5591a81ae527adc92a2bbb2db01606e8-min.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+      class="lg:h-[412px] h-[300px] relative"
+    >
+      <div class="absolute img-flip-y lg:-top-28 -top-4 right-0 z-10">
+        <img
+          src="./assets/images/Rectangle2.svg"
+          class="w-[300px] lg:w-full"
+          alt=""
+        />
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 1;
+        "
+      />
+      <div class="z-10 relative z-2 w-full h-full">
+        <div class="flex w-full h-full justify-center items-center">
+          <h1
+            class="font-bold lg:text-[54px] text-[22px] flex items-center text-center lg:leading-[60px] gradient-text pb-2"
+          >
+            We provide access to our vibrant shared <br />
+            workspaces, exclusive events, and a thriving <br />
+            digital community
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white pt-10">
+      <div class="grid lg:grid-cols-6 lg:px-10 px-6">
+        <div class="lg:col-span-3">
+          <h2 class="gradient-text-4 text-[32px] leading-[72px] font-bold">
+            Never miss an update
+          </h2>
+          <p>
+            Sign up for our newsletter and stay up to date on upcoming events
+          </p>
+          <div class="w-full py-6 flex items-center gap-4">
+            <input
+              type="text"
+              class="bg-[#363636] max-w-[350px] border border-white border-solid px-4 py-2 rounded-full"
+              placeholder="Your email address"
+            />
+            <button class="px-3 py-2 bg-white text-black rounded-full">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <h3 class="text-[20px] text-[#b2b2b2] pt-4 pb-2">Our Location</h3>
+
+          <div>
+            <p>
+              📍 B16, Al'barka shopping <br />
+              complex, Bodija. Ibadan. Nigeria.
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-1">
+          <h3 class="text-[20px] text-[#b2b2b2] pt-4 pb-2">Follow Us</h3>
+          <ul class="flex items-center gap-2 pb-3">
+            <li><img src="./assets/icons/Instagram.svg" alt="" /></li>
+            <li><img src="./assets/icons/Facebook.svg" alt="" /></li>
+            <li><img src="./assets/icons/Tiktok.svg" alt="" /></li>
+          </ul>
+          <div class="flex flex-col gap-2 pb-2 lg:pb-0">
+            <p class="font-bold text-[18px]">Talk to us</p>
+            <p>
+              ☎️
+              <a href="tel:+2348149004610" class="underline">+2348149004610</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 border-t border-solid border-gray-800">
+        <div class="flex lg:items-center justify-between">
+          <p class="text-[#8A8A8A]">
+            aimtoget ©<span id="current-year"></span>
+          </p>
+          <ul class="flex flex-col lg:flex-row items-center gap-4">
+            <li class="text-[14px] text-[#8A8A8A]">Privacy Policy</li>
+            <li class="text-[14px] text-[#8A8A8A]">Cookie Notice</li>
+            <li class="text-[14px] text-[#8A8A8A]">Terms of Use</li>
+            <li class="text-[14px] text-[#8A8A8A]">Content Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
