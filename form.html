@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/index.css" />
+
     <title>Multi-Step Form</title>
   </head>
   <body>
@@ -34,11 +35,27 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>Pick the day you want to make use the hub.</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="lg:text-[34px] max-w-[530px]">
+                Pick the day you want to make use the hub.
+              </h2>
+              <div class="relative mt-4 lg:w-[530px]">
+                <input
+                  type="text"
+                  class="w-full pl-4 py-2.5 pr-10 border border-[#ccc] border-solid rounded-full text-[16px] focus:outline-none"
+                  placeholder="dd/mm/yyyy"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='date')"
+                />
+              </div>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(2)" />
+              <button
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                onclick="showStep(2, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
 
@@ -54,11 +71,30 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>Select a package</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="text-[34px]">Select a package</h2>
+              <div class="dropdown pt-4">
+                <button
+                  id="dropbtn"
+                  class="dropbtn flex text-start text-[#bebbbf] border border-solid border-[#bebbbf] rounded-full lg:w-[530px]"
+                >
+                  select a package
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="selectItem('Item 1')">Item 1</a>
+                  <a href="#" onclick="selectItem('Item 2')">Item 2</a>
+                  <a href="#" onclick="selectItem('Item 3')">Item 3</a>
+                </div>
+              </div>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(3, event)" />
+              <button
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                value="Next"
+                onclick="showStep(3, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
 
@@ -74,13 +110,28 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>Your email address</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="lg:text-[34px] max-w-[530px]">Your email address</h2>
+              <input
+                class="pl-4 py-2.5 mt-4 pr-10 lg:w-[530px] border border-[#ccc] border-solid rounded-full text-[16px] focus:outline-none"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="sample@email.com"
+                required
+              />
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(4, event)" />
+              <button
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                value="Next"
+                onclick="showStep(4, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
+
           <div class="form-step h-full" id="step-4" style="display: none">
             <div class="flex items-start justify-start gap-3">
               <button value="Back" onclick="showStep(3, event)">
@@ -93,11 +144,24 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>Your full name</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="lg:text-[34px] max-w-[530px]">Your full name</h2>
+              <input
+                class="pl-4 py-2.5 mt-4 pr-10 lg:w-[530px] border border-[#ccc] border-solid rounded-full text-[16px] focus:outline-none"
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="e.g John Adamu"
+              />
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(5, event)" />
+              <button
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                value="Next"
+                onclick="showStep(5, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
 
@@ -113,11 +177,25 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>Your phone number</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="lg:text-[34px] max-w-[530px]">Your phone number</h2>
+              <input
+                class="pl-4 py-2.5 mt-4 pr-10 lg:w-[530px] border border-[#ccc] border-solid rounded-full text-[16px] focus:outline-none"
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(6, event)" />
+              <button
+                value="Next"
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                onclick="showStep(6, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
 
@@ -133,27 +211,54 @@
 
               <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
             </div>
-            <div class="h-full flex justify-center items-center">
-              <h2>How would you like to pay?</h2>
+            <div class="h-full flex flex-col justify-center items-center">
+              <h2 class="lg:text-[34px] max-w-[530px]">
+                How would you like to pay?
+              </h2>
+              <div>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="online" checked />
+                  <span class="checkmark"></span>
+                  Pay online
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="cash" />
+                  <span class="checkmark"></span>
+                  Pay with cash
+                </label>
+              </div>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(7, event)" />
+              <button
+                value="Next"
+                class="px-6 py-3 bg-[#ab2923] rounded-full text-white"
+                onclick="showStep(7, event)"
+              >
+                Next
+              </button>
             </div>
           </div>
+
           <div class="form-step h-full" id="step-7" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+              <a href="index.html">
+                <img src="./assets/images/aimtogetDark.svg" alt="Logo" />
+              </a>
             </div>
             <div class="h-full flex flex-col justify-center items-center">
               <h2>Spot Reserved</h2>
-              <p class="w-[530px] text-[18px] text-center">
+              <p class="lg:w-[530px] text-[18px] text-center">
                 Your spot has been reserved. Kindly visit the hub and see the
                 receptionist to make cash payments.
               </p>
-            </div>
-            <div class="flex items-end justify-end">
-              <a href="index.html">
-                <button>Go to home</button>
+              <a
+                href="index.html"
+                class="bg-[#F3F3F3] px-6 mt-8 py-2 rounded-[28px]"
+              >
+                <button class="font-bold text-[16px] text-[#3a3a3a]">
+                  Go to home
+                </button>
               </a>
             </div>
           </div>

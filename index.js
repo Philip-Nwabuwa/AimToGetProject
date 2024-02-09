@@ -2,6 +2,10 @@ const currentYear = new Date().getFullYear();
 
 document.getElementById("current-year").textContent = currentYear;
 
+function selectItem(itemText) {
+  document.getElementById("dropbtn").textContent = itemText;
+}
+
 function updateProgressBar(step) {
   // Update the progress bar based on the current step
   for (let i = 1; i <= 6; i++) {

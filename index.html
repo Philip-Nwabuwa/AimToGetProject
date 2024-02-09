@@ -84,25 +84,43 @@
       </div>
     </section>
     <section
-      class="w-full flex flex-col items-center justify-center px-10 my-20"
+      class="w-full flex flex-col items-center justify-center lg:px-10 px-6 my-20"
     >
       <div class="z-10">
         <h2
-          class="gradient-text-2 font-bold lg:text-[54px] lg:leading-[60px] z-10 text-center"
+          class="gradient-text-2 font-bold text-[30px] lg:text-[54px] lg:leading-[60px] pb-2 z-10 text-center"
         >
           More than just a
         </h2>
         <h2
-          class="text-[#AB2923] font-bold lg:text-[54px] lg:leading-[60px] z-10 text-center"
+          class="text-[#AB2923] font-bold text-[30px] lg:text-[54px] lg:leading-[60px] z-10 text-center"
         >
           Workspace...
         </h2>
 
-        <!-- <div
-          class="grid lg:grid-cols-1 lg:grid-rows-2 lg:grid-cols-3 gap-4 mt-10"
+        <div class="flex flex-col gap-8 mt-8">
+          <img
+            src="./assets/images/__after.svg"
+            class="w-full h-full"
+            alt="Fast Internet Image"
+          />
+          <img
+            src="./assets/images/image 4.svg"
+            class="w-full h-full rounded-3xl"
+            alt="Friendly Environment Image"
+          />
+          <img
+            src="./assets/images/image 3.svg"
+            class="rounded-3xl w-full h-full"
+            alt="Confortable workspace"
+          />
+        </div>
+        <!-- large screen -->
+        <div
+          class="hidden lg:grid grid-cols-1 grid-rows-2 grid-cols-3 gap-4 mt-10"
         >
           <div
-            class="lg:col-span-1 lg:row-span-2 relative border border-solid border-gray-200 rounded-5xl"
+            class="col-span-1 row-span-2 relative border border-solid border-gray-200 rounded-5xl"
           >
             <img
               src="./assets/images/__after.svg"
@@ -126,7 +144,7 @@
             </div>
           </div>
           <div
-            class="relative lg:col-span-1 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+            class="relative col-span-1 row-span-1 border border-solid border-gray-200 rounded-3xl"
           >
             <img
               src="./assets/images/image 4.svg"
@@ -146,7 +164,7 @@
             </div>
           </div>
           <div
-            class="relative lg:col-span-1 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+            class="relative col-span-1 row-span-1 border border-solid border-gray-200 rounded-3xl"
           >
             <div
               class="z-10 absolute inset-0 flex flex-col justify-end px-6 pb-10"
@@ -161,7 +179,7 @@
             </div>
           </div>
           <div
-            class="relative lg:col-span-2 lg:row-span-1 border border-solid border-gray-200 rounded-3xl"
+            class="relative col-span-2 row-span-1 border border-solid border-gray-200 rounded-3xl"
           >
             <img
               src="./assets/images/image 3.svg"
@@ -184,7 +202,7 @@
               </p>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <section class="w-full h-full bg-black relative">
@@ -216,14 +234,16 @@
           </p>
 
           <div class="flex flex-row gap-4 items-center">
-            <button
-              class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
-            >
-              Reserve your seat
-              <span>
-                <img src="./assets/icons/Arrow.svg" alt="" />
-              </span>
-            </button>
+            <a href="form.html">
+              <button
+                class="bg-[#AB2923] text-white flex items-center gap-4 py-2 px-5 rounded-full"
+              >
+                Reserve your seat
+                <span>
+                  <img src="./assets/icons/Arrow.svg" alt="" />
+                </span>
+              </button>
+            </a>
             <button
               class="text-white flex items-center py-4 lg:px-9 px-5 rounded-full border border-solid border-white"
             >
@@ -260,7 +280,7 @@
           </div>
           <div class="w-full h-full flex justify-end items-end">
             <div
-              class="bg-[#131313] w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
+              class="bg-[#131313] hidden lg:flex w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
             ></div>
           </div>
         </div>
@@ -283,7 +303,7 @@
           </div>
           <div class="w-full h-full flex justify-end items-end">
             <div
-              class="bg-[#131313] w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
+              class="bg-[#131313] hidden lg:flex w-[50px] h-[50px] lg:w-[300px] lg:h-[250px] rounded-tl-3xl"
             ></div>
           </div>
         </div>
@@ -365,7 +385,7 @@
         />
       </div>
     </section>
-    <section class="w-full h-full relative">
+    <section class="w-full h-full relative px-6">
       <div class="px-10 py-20">
         <h2
           class="gradient-text-2 font-bold text-[54px] leading-[60px] z-10 text-center pb-2"
@@ -380,7 +400,7 @@
       <div
         class="flex flex-col lg:flex-row gap-8 items-center justify-center pb-20"
       >
-        <div class="w-[380px] h-[486px] bg-[#e8e8e8] flex rounded-3xl">
+        <div class="lg:w-[380px] lg:h-[486px] bg-[#e8e8e8] flex rounded-3xl">
           <div class="p-8 w-full">
             <p class="font-bold text-[32px] text-center">Daily</p>
             <div class="flex items-end justify-center">
@@ -411,15 +431,17 @@
               </li>
             </ul>
 
-            <button
-              class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
-            >
-              Book Now
-            </button>
+            <a href="form.html">
+              <button
+                class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
+              >
+                Book Now
+              </button>
+            </a>
           </div>
         </div>
         <div
-          class="w-[380px] h-[486px] lg:mb-40 bg-[#ab2923] rounded-3xl text-white"
+          class="lg:w-[380px] lg:h-[486px] lg:mb-40 bg-[#ab2923] rounded-3xl text-white"
         >
           <div class="p-8 w-full">
             <div class="w-full flex justify-end pb-2">
@@ -459,14 +481,16 @@
               </li>
             </ul>
 
-            <button
-              class="w-full h-[60px] bg-white text-black mt-4 rounded-full"
-            >
-              Book Now
-            </button>
+            <a href="form.html">
+              <button
+                class="w-full h-[60px] bg-white text-black mt-4 rounded-full"
+              >
+                Book Now
+              </button>
+            </a>
           </div>
         </div>
-        <div class="w-[380px] h-[486px] bg-[#e8e8e8] flex rounded-3xl">
+        <div class="lg:w-[380px] lg:h-[486px] bg-[#e8e8e8] flex rounded-3xl">
           <div class="p-8 w-full">
             <p class="font-bold text-[32px] text-center">Monthly</p>
             <div class="flex items-end justify-center">
@@ -497,11 +521,13 @@
               </li>
             </ul>
 
-            <button
-              class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
-            >
-              Book Now
-            </button>
+            <a href="form.html">
+              <button
+                class="w-full h-[60px] bg-black text-white mt-4 rounded-full"
+              >
+                Book Now
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -558,7 +584,7 @@
           <div class="w-full py-6 flex items-center gap-4">
             <input
               type="text"
-              class="bg-[#363636] max-w-[350px] border border-white border-solid px-4 py-2 rounded-full"
+              class="bg-[#363636] lg:w-[350px] w-full border border-white border-solid px-4 py-2 rounded-full"
               placeholder="Your email address"
             />
             <button class="px-3 py-2 bg-white text-black rounded-full">
@@ -593,11 +619,15 @@
         </div>
       </div>
       <div class="p-5 border-t border-solid border-gray-800">
-        <div class="flex lg:items-center justify-between">
+        <div
+          class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+        >
           <p class="text-[#8A8A8A]">
             aimtoget ©<span id="current-year"></span>
           </p>
-          <ul class="flex flex-col lg:flex-row items-center gap-4">
+          <ul
+            class="flex flex-col mt-4 lg:mt-0 lg:flex-row lg:items-center gap-4"
+          >
             <li class="text-[14px] text-[#8A8A8A]">Privacy Policy</li>
             <li class="text-[14px] text-[#8A8A8A]">Cookie Notice</li>
             <li class="text-[14px] text-[#8A8A8A]">Terms of Use</li>
