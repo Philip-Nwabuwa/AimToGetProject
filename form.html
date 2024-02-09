@@ -44,7 +44,7 @@
 
           <div class="form-step h-full" id="step-2" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <button value="Back" onclick="showStep(1)">
+              <button value="Back" onclick="showStep(1, event)">
                 <img
                   src="./assets/icons/ArrowLeft.svg"
                   class="p-3 border border-black border-solid rounded-full"
@@ -58,13 +58,13 @@
               <h2>Select a package</h2>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(3)" />
+              <input type="button" value="Next" onclick="showStep(3, event)" />
             </div>
           </div>
 
           <div class="form-step h-full" id="step-3" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <button value="Back" onclick="showStep(2)">
+              <button value="Back" onclick="showStep(2, event)">
                 <img
                   src="./assets/icons/ArrowLeft.svg"
                   class="p-3 border border-black border-solid rounded-full"
@@ -78,12 +78,12 @@
               <h2>Your email address</h2>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(4)" />
+              <input type="button" value="Next" onclick="showStep(4, event)" />
             </div>
           </div>
           <div class="form-step h-full" id="step-4" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <button value="Back" onclick="showStep(3)">
+              <button value="Back" onclick="showStep(3, event)">
                 <img
                   src="./assets/icons/ArrowLeft.svg"
                   class="p-3 border border-black border-solid rounded-full"
@@ -97,13 +97,13 @@
               <h2>Your full name</h2>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(5)" />
+              <input type="button" value="Next" onclick="showStep(5, event)" />
             </div>
           </div>
 
           <div class="form-step h-full" id="step-5" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <button value="Back" onclick="showStep(4)">
+              <button value="Back" onclick="showStep(4, event)">
                 <img
                   src="./assets/icons/ArrowLeft.svg"
                   class="p-3 border border-black border-solid rounded-full"
@@ -117,13 +117,13 @@
               <h2>Your phone number</h2>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(6)" />
+              <input type="button" value="Next" onclick="showStep(6, event)" />
             </div>
           </div>
 
           <div class="form-step h-full" id="step-6" style="display: none">
             <div class="flex items-start justify-start gap-3">
-              <button value="Back" onclick="showStep(5)">
+              <button value="Back" onclick="showStep(5, event)">
                 <img
                   src="./assets/icons/ArrowLeft.svg"
                   class="p-3 border border-black border-solid rounded-full"
@@ -137,7 +137,7 @@
               <h2>How would you like to pay?</h2>
             </div>
             <div class="flex items-end justify-end">
-              <input type="button" value="Next" onclick="showStep(7)" />
+              <input type="button" value="Next" onclick="showStep(7, event)" />
             </div>
           </div>
           <div class="form-step h-full" id="step-7" style="display: none">
